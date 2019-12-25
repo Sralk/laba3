@@ -21,20 +21,11 @@ int Levels(int x, int n){
  std::vector<int> CreatingBuffer(int size){
     srand(time(nullptr));
 
-    int a = 2;
     std::vector<int>buffer(size);
 
-    if (a == 1){
-//Написать для файла
-    } else {
-        if (a == 2) {
             for (int i = 0; i < size; i++) {
                 buffer[i] = rand_r(&seed);
             }
-        }
-    } else {
-        throw std::logic_error("Вы ввели недопустимое значение");
-    }
     return buffer;
 }
 
