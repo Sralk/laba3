@@ -12,7 +12,7 @@ static unsigned int seed;
 
 int Levels(int x, int n){
     int size = 0;
-        size = ceil(pow(2,(x+n)) * KB / 4);
+        size = ceil(pow(2, (x + n)) * KB / 4);
     return size;
 }
 
