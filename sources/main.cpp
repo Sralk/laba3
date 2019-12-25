@@ -26,15 +26,13 @@ int Levels(int x, int n){
 
     if (a == 1){
 //Написать для файла
-    }
-    else {
+    } else {
         if (a == 2) {
             for (int i = 0; i < size; i++) {
                 buffer[i] = rand_r(&seed);
             }
         }
-    }
-    else {
+    } else {
         throw std::logic_error("Вы ввели недопустимое значение");
     }
     return buffer;
@@ -112,7 +110,7 @@ std::vector<int>buffer = CreatingBuffer(Levels(x, 0)/2);
 
     Heating(&buffer);
 
-    std::cout << Reverse( &buffer) << " ";
+    std::cout << Reverse(&buffer) << " ";
 
     Heating(&buffer);
 
@@ -128,7 +126,7 @@ for (int i = 1; i <= n; i++){
 
     Heating(&buffer);
 
-    std::cout << Reverse( &buffer) << " ";
+    std::cout << Reverse(&buffer) << " ";
 
     Heating(&buffer);
 
@@ -147,7 +145,7 @@ for (int i = 1; i <= n; i++){
 
     Heating(&buffer);
 
-    std::cout << Randomize(&buffer);
+    std::cout << Randomize(&buffer) << std::endl;
 
     return 0;
 }
