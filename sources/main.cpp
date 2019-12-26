@@ -37,8 +37,8 @@ int main() {
     int red_ball = 10;
     SharedPtr<int>red_balls(&red_ball);
     balls = red_balls;
-    bool flag = !red_balls;
-    bool flagocheck = bool(red_balls);
+    //bool flag = !red_balls;
+    //bool flagocheck = bool(red_balls);
     int *ptrredball = balls.get();
     std::cout << *ptrredball;
     SharedPtr<SharedPtr<int>>blue_balls(&balls);
