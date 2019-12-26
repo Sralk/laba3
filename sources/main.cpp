@@ -6,7 +6,7 @@
 class Page{
 public:
     std::string text;
-    Page(std::string str){
+    explicit Page(std::string str){
         this->text = str;
     }
     Page(){
@@ -41,10 +41,10 @@ int main() {
     //bool flagocheck = bool(red_balls);
     int *ptrredball = balls.get();
     std::cout << *ptrredball;
-    SharedPtr<SharedPtr<int>>blue_balls(&balls);
+    SharedPtr< SharedPtr<int> >blue_balls(&balls);
     ptrredball = blue_balls->get();
     std::cout << *ptrredball;
-    if(red_balls) {
+    if (red_balls) {
         ptrredball = red_balls.get();
         std::cout << *ptrredball;
     }
